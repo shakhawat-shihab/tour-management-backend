@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Dhaka to Coxs bazar",
+        "description": "2 Days",
+        "image": "coxs bazar image",
+        "price": 3000,
+        "helpLine": "343453",
+        "ratings": 5,
+        "peopleNeed": 2,
+        "status": "pending"
+    }
+]
