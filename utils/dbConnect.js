@@ -1,6 +1,7 @@
 const { MongoClient } = require("mongodb");
 const mongoose = require('mongoose');
-const connectionString = process.env.ATLAS_URI
+// const connectionString = process.env.ATLAS_URI
+const connectionString = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.zwiso.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
 module.exports = () => {
     console.log('connecting to DB...');
