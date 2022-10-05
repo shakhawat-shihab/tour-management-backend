@@ -11,12 +11,14 @@ exports.getTours = async (req, res, next) => {
             query.sort = filters.sort.replace(/\b,\b/g, match => ' ');
         }
         if (filters?.page) {
-            const { limit = 3, page = 1 } = filters;
+            const { limit = 3, page } = filters;
             const skip = (page - 1) * parseInt(limit);
             query.skip = skip;
+            query.page = +page;
             query.limit = +limit;
         }
         else {
+            query.page = 1;
             query.limit = 5;
         }
 

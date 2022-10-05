@@ -5,7 +5,8 @@ exports.getToursService = async (query) => {
     const tours = await Tour.find({}).sort(query.sort).select(query.fields).skip(query.skip).limit(query.limit);
     const totalTours = await Tour.countDocuments({});
     const pages = Math.ceil(totalTours / query.limit);
-    return { totalTours, pages, tours }
+    const currentPage = query.page;
+    return { totalTours, pages, currentPage, tours }
 }
 
 exports.getSingleTourService = async (id) => {
