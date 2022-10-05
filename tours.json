@@ -8,5 +8,60 @@
         "ratings": 5,
         "peopleNeed": 2,
         "status": "pending"
+    },
+    {
+        "name": "Dhaka to  Barishal",
+        "description": "3 Days",
+        "image": "Barishalla image",
+        "price": 3500,
+        "helpLine": "234365",
+        "ratings": 4.5,
+        "peopleNeed": 3,
+        "status": "pending",
+        "viewCount": 12
+    },
+    {
+        "name": "Dhaka to  Sylhet",
+        "description": "3 Days",
+        "image": "Sylhetti image",
+        "price": 3500,
+        "helpLine": "438375",
+        "ratings": 3.5,
+        "peopleNeed": 3,
+        "status": "pending",
+        "viewCount": 12
+    },
+    {
+        "name": "Dhaka to  Rajshahi",
+        "description": "3 Days",
+        "image": "Rajshahii image",
+        "price": 4500,
+        "helpLine": "458395",
+        "ratings": 3.5,
+        "peopleNeed": 4,
+        "status": "pending",
+        "viewCount": 12
+    },
+    {
+        "name": "Sylhet to  Cox's Bazar",
+        "description": "4 Days",
+        "image": "Cox's Bazar image",
+        "price": 6000,
+        "helpLine": "258605",
+        "ratings": 4.5,
+        "peopleNeed": 4,
+        "status": "pending",
+        "viewCount": 12
+    },
+    {
+        "name": "Sylhet to  Kuakata",
+        "description": "3 Days",
+        "image": "Kuakata image",
+        "price": 7000,
+        "helpLine": "239905",
+        "ratings": 4.1,
+        "peopleNeed": 0,
+        "status": "pending",
+        "viewCount": 12
     }
 ]

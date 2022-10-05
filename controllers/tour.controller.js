@@ -16,6 +16,10 @@ exports.getTours = async (req, res, next) => {
             query.skip = skip;
             query.limit = +limit;
         }
+        else {
+            query.limit = 5;
+        }
+
         // console.log(query)
         const tours = await getToursService(query);
         return res.status(200).json({ status: 'success', message: 'data loaded successfully', data: tours })
