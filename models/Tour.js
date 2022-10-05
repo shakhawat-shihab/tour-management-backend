@@ -40,7 +40,7 @@ const tourSchema = mongoose.Schema({
         type: String,
         required: true,
     },
-    rating: {
+    ratings: {
         type: Number,
         required: true,
         min: [0, "Quantity can't be negative"],
@@ -70,6 +70,10 @@ const tourSchema = mongoose.Schema({
             message: "Status can't be {value}"
         }
     },
+    viewCount: {
+        type: Number,
+        default: 0,
+    }
 },
     {
         timestamps: true,

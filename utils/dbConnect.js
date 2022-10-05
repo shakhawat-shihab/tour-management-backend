@@ -1,11 +1,11 @@
 const { MongoClient } = require("mongodb");
 const mongoose = require('mongoose');
-const connectionString = process.env.ATLAS_URI;
+const connectionString = process.env.ATLAS_URI
 
 module.exports = () => {
-    console.log('connecting to DB...', connectionString);
+    console.log('connecting to DB...');
     mongoose
-        .connect('mongodb://localhost:27017/acc-inventory', {
+        .connect(connectionString, {
             useNewUrlParser: true,
             // useCreateIndex: true,
             // useFindAndModify: false,
